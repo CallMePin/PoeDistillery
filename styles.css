@@ -1,0 +1,615 @@
+﻿/*
+   Poe Distillery style sheet
+   Filename: styles.css
+
+   Author:   Steven Warren
+   Date:     11/24/18
+*/
+
+/* color palette 
+   .color-primary-0 { color: #000000 } black
+   .color-primary-1 { color: #5b5d52 } dark gray
+   .color-primary-2 { color: #f0ba34 } gold
+   .color-primary-3 { color: #d07725 } orange-ish
+   .color-primary-4 { color: #aaaab1 } light gray
+*/
+
+/* reset styles */
+html {
+   font-size: 12px;
+}
+a, article, audio, body, div, fieldset, figcaption, figure, footer, form, header, h1, h2, h3, iframe, img, input, label, legend, li, nav,
+ ol, p,table, tbody, td, textarea, tfoot, th, thead, tr, ul, video {
+	border: 0;
+   padding: 0em;
+   margin: 0em;
+   background-color: #000000;
+   font-family: "Nanum Gothic", sans-serif;
+}
+  
+a:link {
+	color: #aaaab1;
+	text-decoration: none;
+}
+a:visited {
+	color: #888;
+	text-decoration: none;
+}
+a:active {
+	position: relative;
+	top: 1px;
+	left: 1px;
+	text-decoration: none;
+}
+
+/* body and page container */
+.container {
+   min-height: 100%;
+   min-width: 634px;
+   margin: 0;
+   position: relative;
+   background: #000000;
+   overflow: auto;
+}
+
+/* skip navigation link */
+p.skipnavigation a {
+	position: absolute;
+	left: -1000px;
+	z-index: 2;
+}
+p.skipnavigation a:focus {
+	background-color: ivory;
+	
+}
+
+header {
+	padding: 1em;
+   width: 100%;
+   min-width: 620px;
+   float: left;
+   position: fixed;
+   background-color: #000000;
+   color: #aaaab1;
+   font-size: 1.5em;
+   font-weight: bold;
+   top: 0em;
+   z-index: 1;
+   border-bottom: 2px solid #f0ba34;
+}
+
+header p.logo {
+   width: 4em;
+   padding: 1%;
+   border: 2px solid #d07725;
+   color: #d07725;
+   text-align: center;
+   font-size: 2em;
+   font-weight: bold;
+   position: relative;
+   top: 0.2%;
+   left: 0.3%;
+   box-shadow: 0px 0px 10px 5px #f0ba34;
+   -webkit-animation-duration: 2s;
+   animation-duration: 2s;
+   -webkit-animation-timing-function: ease;
+   animation-timing-function: ease;
+   -webkit-animation-name: reveal-logo;
+   animation-name: reveal-logo;
+}
+@-webkit-keyframes reveal-logo {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes reveal-logo {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+header p.logo a:visited {
+	color:#D07725;
+}
+header p.logo a:link {
+	color:#D07725;
+}
+
+
+header h1, h3 {
+	display: none;
+	font-family: "New Times Roman", serif;
+	font-weight: bold;
+}
+
+
+/* site navigation */
+nav.sitenavigation {
+   width: 100%;
+   color: #aaaab1;
+   background: #000000;
+   float: right;
+   position: relative;
+   text-align: center;
+   z-index: 1;
+   font-size: 1.5em;
+}
+div.navigation-menu-button img {
+	padding: 1em;
+	float: right;
+	top: 1%;
+	right: 1%;
+	width: auto;
+	height: auto;
+	position: fixed;
+}
+nav.sitenavigation ul {
+	border: 2px solid #f0ba34;
+	display: none;
+	background-color: #000000;
+	position: absolute;
+	right: 5%;
+	top: 5em;
+	z-index: 2;
+}
+nav.sitenavigation li {
+  	list-style-type: none;
+   margin: 10px;
+   padding: 5px;
+}
+nav.sitenavigation a:hover {
+	padding: 8px;
+	box-shadow: 0 0 10px 5px #f0ba34;
+	color: #d07725;
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+	-webkit-transition-duration: 0.2s;
+   transition-duration: 0.2s;
+   -webkit-transition-timing-function: ease-in;
+   transition-timing-function: ease-in;
+}
+
+/* Main Content of Page */
+article {
+   margin: 5em 0em 3em;
+   padding: 0.5em 0em 0.5em;
+   color: #aaaab1;
+   border-top: 2px solid #5b5d52;
+   float: left; 
+   font-size: 1.7em;
+   background: #000000;
+   
+}
+article p a:link {
+	color: #aaaab1;
+	text-decoration: underline;
+}
+.things  {
+	list-style-position: inside;
+}
+
+a.anchor {
+	display: block;
+	position: relative;
+	top: 5em;
+	visibility: hidden;
+}
+article ul {
+		width: 48%;
+		float: right;
+		margin-right: 1em;
+		font-size: 1em;
+		list-style-type: square;
+	}
+article ol {
+	display: block;
+	margin-left: 5em;
+}
+article div {
+	clear: both;
+}
+img, iframe, video {
+	max-width: 40%;
+	padding: 0.5em;
+	float: left;
+	z-index: -1;
+} 
+
+article figure img {
+	max-width: 40%;
+	padding: 0.5em;
+	clear: both;
+}
+figcaption {
+	width: 54%;
+	font-size: 1.5em;
+	border-bottom: 2px solid #5B5D52;
+	float: left;
+}
+h2, p {
+		padding: 15px;
+	}
+.title {
+		width: 100%;
+	}
+#ourproducts p {
+	float: none;
+	
+}
+
+.accent {
+	width: 100%;
+}
+.accent:first-letter {
+	font-size: 3em;
+	float: none;
+	line-height: 0.9em;
+}
+#responsibly {
+	clear: both;
+}
+
+footer {
+   min-width: 630px;
+   padding: 1em;
+   background: radial-gradient(gray,black) no-repeat;
+   text-align: center;
+   color: #abaca7;
+   border-top: 2px solid #f0ba34;
+   position: relative;
+   clear: both;
+   bottom: 1em;
+   font-size: 1.5em;
+}
+footer, p {
+	max-width: 98%;
+}
+.no-borderradius .moon {
+	background: black;
+}
+.moon {
+  width: 40px; 
+  height: 40px; 
+  border-radius: 50%;
+  box-shadow: inset 8px 3px 5px #f0ba34;
+  transform: rotate(190deg);
+  position: absolute;
+  bottom: 20%;
+  right: 4%;
+}
+
+
+
+/* main content tables */
+table {
+	margin: 1em;
+	color: #f0ba34;
+	border-collapse: collapse;
+	border-spacing: 0;
+	float: inherit;
+	margin-left: 6em;
+	box-shadow: 0px 0px 10px 5px #821309;
+}
+td, th {
+	border: 1px solid #000000;
+	font-size: 1.2em;
+	padding: 0.2em;
+	text-align: center;
+	background-color: gray;
+}
+th {
+	background-color: #69120c;
+}
+td {
+	background-color: #821309;
+}
+
+
+/* form styles */
+form {
+	padding: 10px;
+}
+.form-instructions {
+   color: red;
+   text-align: left;
+}
+
+/* fieldset styles */
+#form {
+	max-width: 100%;
+	border: 1px solid #f0ba34;
+	float: inherit;
+}
+fieldset {
+	max-width: 80%;
+	margin-bottom: 0.8em;
+}
+fieldset fieldset {
+	margin-top: 1em;
+	padding: 0.8em;
+}
+legend {
+	font-size: 1.25em;
+}
+
+.contactinfo legend,
+.metrics legend,
+.birthdate legend {
+	margin-left: -0.1em;
+	font-weight: bold;
+}
+.birthdate {
+	position: relative;
+}
+.submitbutton {
+	
+	display: none;
+}
+
+
+/* field styles */
+.contactinfo input, textarea, #yearinput, #search {
+	background-color: #AAAAB1;
+	border: 1px solid #F0BA34;
+	padding: 0.2em;
+	font-size: 1em;
+}
+input:valid {
+	background-color: #d1f4bd;
+}
+input:focus, textarea:focus {
+	background-color: #cce5ef;
+}
+select {
+	margin-bottom: 0.6em;
+}
+.contactinfo input {
+	position: absolute;
+	left: 5em;
+}
+.metrics label {
+	color: #ABACA7;
+}
+.birthdate select, .regarding select {
+	background-color: #AAAAB1;
+	border: 1px solid #F0BA34;
+	padding: 0.2em;
+}
+.birthdate input {
+	position: absolute;
+	left: 10em;
+}
+#nameinput, #emailinput {
+	width: 25em;
+}
+#phoneinput {
+	width: 12em;
+}
+#submit {
+	border: none;
+	padding: 0.4em 0.6em;
+	margin: 10px;
+	background-color: #69120C;
+	font-size: 1.25em;
+	border-radius: 10px;
+}
+
+/* label styles */
+label {
+	font-size: 1em;
+	line-height: 1.6em;
+	padding: 0.3em;
+}
+legend:before {
+	content: "* ";
+	color: red;
+}
+.written legend:before {
+	content: "";
+}
+.contactinfo label {
+	display: block;
+	position: relative;
+	margin: 0.8em 0;
+}
+.birthdate select, .regarding select {
+	font-size: 0.9em;
+}
+.birthdate #yearinput {
+	width: 8em;
+	position: relative;
+	left: 0em;
+}
+.about {
+	max-width: 30%;
+}
+.products label {
+	left: 3em;
+	display: block;
+	position: relative;
+	clear: both;
+}
+.written {
+	padding: 0.5em;
+}
+
+/* feedback preview section */
+.feedback-preview {
+   max-width: 75%;
+   padding: 10px;
+   margin: 0 0 10px 2%;
+   border: 2px solid gold;
+   font-size: 1.3em;
+   background-color: black;
+   display: none;
+}
+.show {
+	display: block;
+}
+.feedback-preview p {
+   margin-bottom: 0.3em;
+}
+.table-row {
+   display: table-row;
+}
+.table-row div:first-child {
+   font-weight: bold;
+}
+.table-cell {
+   padding: 0 0.2em;
+   display: table-cell;
+}
+.feedback-content {
+   padding: 0.4em 0.2em 0;
+}
+
+
+footer p {
+	width: 100%;
+}
+
+
+
+/* standard screen styles */
+@media screen and (min-width: 880px) {
+	header {
+		float: none;
+		width: 100%;
+		height: 7em;
+	}
+	header p.logo {
+   	width: 15%;
+   	padding: 1%;
+   	border: 2px solid #d07725;
+   	color: #d07725;
+   	text-align: center;
+   	font-size: 2em;
+   	font-weight: bold;
+   	position: absolute;
+   	top: 0.6em;
+   	left: 1em;
+   	box-shadow: 0px 0px 10px 5px #f0ba34;
+	}
+	header p.logo a:visited {
+		color:#D07725;
+	}
+	header p.logo a:link {
+		color:#D07725;
+	}
+	header h1,h3 {
+		width: 70%;
+   	padding: 0.4em;
+  	 	float: right;
+  	 	display: block;
+	}
+	div.navigation-menu-button {
+		display:none;	
+	}
+	nav.sitenavigation {
+		width: 100%;
+		padding: 0;
+		min-width: 620px;
+   	color: #aaaab1;
+   	border-top: 2px solid #f0ba34;
+   	background: #000000;
+   	position: fixed;
+   	top: 7em;
+   	text-align: center;
+   	z-index: 1;
+   	font-size: 1.5em;
+	}
+	nav.sitenavigation ul {
+		border: none;
+		width: 100%;
+		display: block;
+		position: static;
+		text-align: center;
+		border-bottom: 2px solid #f0ba34;
+	}
+	nav.sitenavigation li {
+		display: inline-block;	
+	}
+	
+	article figure img {
+		max-width: 40%;
+		padding: 0.5em;
+		clear:both;
+	}
+	article {
+		max-width: 100%;
+		height: 98%;
+		margin: 8em 0 2em 0;
+		background: #000000;
+		background: url("images/brick.jpg");
+	}
+	
+	a.anchor {
+	display: block;
+	position: relative;
+	top: 10em;
+	visibility: hidden;
+	}
+	
+	article ul {
+		max-width: 40%;
+		clear: right;
+		float: inherit;
+		padding: 2%;
+		font-size: 1em;
+		list-style-type: square;
+	}
+	article ol {
+		display: block;
+		
+		padding: 15px 15px 15px 75px;
+	}
+	h2, p {
+		padding: 15px;
+	}
+	.title {
+		width: 100%;
+	}
+	.width {
+		width: 100%;
+	}
+	.width h3 {
+		width: 98%;
+		float: left;
+	}
+	figcaption {
+		width: 56%;
+		padding: 0.5em;
+	}
+	#responsibly {
+		width: 100%;
+	}
+	.top-link {
+		right: auto;
+		left: 0;
+	}
+}
+
+
+
+
+
+/* print styles */
+@media print {
+   article, body, div, footer, header, h1, h2, h3, p, footer {
+      color: #000;
+      background-color: #fff;
+      }
+      body {
+         max-width: 100%;
+         border: 0;
+      }
+}
+@page {
+   margin: 0.5in;
+}

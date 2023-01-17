@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Poe Distillery</title>
+      <!--
+         Poe Distillery
+         Filename: contactus.html
+
+         Author:   Steven Warren
+         Date:     11/24/2018
+      -->
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+      <meta name="viewport" content="width=device-width" />
+      <script src="modernizr.custom.28018.js"></script>
+      <link rel="stylesheet" href="styles.css"/>
+      <link rel="shortcut icon" href="images/poe-icon.PNG">
+      <link rel="apple-touch-icon" href="images/poe-icon.PNG">
+      <link rel="icon" sizes="192x192" href="images/poe-icon.PNG">
+   </head>
+   <body>
+      <div class="container">
+      	<p class="skipnavigation"><a href="#contentstart">Skip navigation</a></p>
+         <header>
+            <h1>Poe Distillery</h1>
+            <h3>Quoth the Drunken Raven, "<i>Just one more.</i>"</h3>
+            <p class="logo"><a href="index.html"> &#8473; &#120134; &#120124; </a></p>
+         </header>
+            <!-- 
+               Navigation Bar 
+            -->
+            <nav class="sitenavigation">
+            	<div class="navigation-menu-button">
+            		<img src="images/menu.png" width="63" height="57" alt="Show navigation">
+            	</div>
+            	<ul>
+            		<li><a href="index.html">Home Page</a></li>
+               	<li><a href="productexample.html">Our Products</a></li>
+               	<li><a href="aboutus.html">About Us</a></li>
+               	<li><a href="purchase.html">Where to Purchase</a></li>
+               	<li><a href="contactus.html" target="_blank">Contact Us</a></li>
+               	<li><input type="text" name="search" id="search" placeholder="Search"></li>
+               </ul>
+            </nav>
+
+         <article id="contentstart">
+            <img src="images/barrels.jpg" alt="room with barrels">
+            <h2 class="title">Contact Us</h2>
+            <p>Please fill out <a href="#formstart" id="formlink">the form below</a> for: </p>
+            <ul>
+            	<li>Questions - Any questions that you think we may be able to answer.</li>
+            	<li>Comments - Does one of our beverages remind you of a special occasion? We love to hear about why people love our drinks.</li>
+            	<li>Feedback - Specific feedback about a particular product. What do you love or like best about how we do things?</li>
+            	<li>Suggestions - Let us know what you think would make us better.</li>
+            </ul>
+            
+            <a class="anchor" id="formstart"> </a>
+            
+            <div id="form">
+            <form action="results.html">
+            	<fieldset class="contactinfo">
+            		<legend>Contact Information</legend>
+            		<p class="form-instructions">* indicates a required field</p>
+
+            		<label for="nameinput">
+            			Name
+            			<input type="text" name="name" id="nameinput" placeholder="First and Last Name">
+            		</label>
+            		<label for="emailinput">
+            			Email
+            			<input type="email" name="email" id="emailinput" placeholder="address@example.com">
+            		</label>
+            		<label for="phoneinput">
+            			Phone
+            			<input type="tel" name="phone" id="phoneinput" placeholder="(410) 867-5309">
+            		</label>
+            	</fieldset>
+            	<fieldset class="metrics">
+            		<fieldset class="gender">
+            			<legend>Additional Information</legend>
+            			<label for="male">
+            				<input type="radio" id="male" value="Male" name="gender" checked>
+            				Male
+            			</label>
+            			<label for="female">
+            				<input type="radio" id="female" value="Female" name="gender">
+            				Female
+            			</label>
+            			<label for="raven-gender">
+            				<input type="radio" id="raven-gender" value="Raven" name="gender">
+            				Raven
+            			</label>
+            	</fieldset>
+            		<fieldset class="birthdate">
+            			<legend>Birthdate</legend>
+            					<label for="birthdate-month">Month</label>
+            					<select id="birthdate-month" name="birthdate-month">
+            						<option value="01">January</option>
+            						<option value="02">February</option>
+            						<option value="03">March</option>
+            						<option value="04">April</option>
+            						<option value="05">May</option>
+            						<option value="06">June</option>
+            						<option value="07">July</option>
+            						<option value="08">August</option>
+            						<option value="09">September</option>
+            						<option value="10">October</option>
+            						<option value="11">November</option>
+            						<option value="12">December</option>
+            					</select>
+            					<label for="birthdate-day">Day</label>
+            					<select id="birthdate-day" name="birthdate-day">
+            						<option value="01">1</option>
+										<option value="02">2</option>
+										<option value="03">3</option>
+										<option value="04">4</option>
+										<option value="05">5</option>
+										<option value="06">6</option>
+										<option value="07">7</option>
+										<option value="08">8</option>
+										<option value="09">9</option>
+										<option value="10">10</option>
+										<option value="11">11</option>
+										<option value="12">12</option>
+										<option value="13">13</option>
+										<option value="14">14</option>
+										<option value="15">15</option>
+										<option value="16">16</option>
+										<option value="17">17</option>
+										<option value="18">18</option>
+										<option value="19">19</option>
+										<option value="20">20</option>
+										<option value="21">21</option>
+										<option value="22">22</option>
+										<option value="23">23</option>
+										<option value="24">24</option>
+										<option value="25">25</option>
+										<option value="26">26</option>
+										<option value="27">27</option>
+										<option value="28">28</option>
+										<option value="29">29</option>
+										<option value="30">30</option>
+										<option value="31">31</option>
+            					</select>
+            					<label for="yearinput">
+            						Year
+            						<input type="text" name="year" id="yearinput" placeholder="1980">
+            					</label>
+            		</fieldset>
+            	</fieldset>
+            	<fieldset>
+            		<legend>Let us know why are you contacting us today so we can direct your inquiry to the right people.</legend>
+            			<div class="regarding">
+            					<label for="regarding">What is this most related to?</label>
+            					<select id="regarding" name="regarding">
+            						<option value="question">Question</option>
+            						<option value="comment">Comment</option>
+            						<option value="feedback">Feedback</option>
+            						<option value="suggestion">Suggestion</option>
+            						<option value="other">Other</option>
+            					</select>
+            			</div>
+            	</fieldset>
+            		<fieldset class="products">
+            			<legend>Regarding which products?</legend>
+            			<label for="annabelle">
+            				<input type="checkbox" id="annabelle" value="Annabelle Lee" name="drink">
+            				Annabelle Lee
+            			</label>
+            			<label for="angel">
+            				<input type="checkbox" id="angel" value="Angel of the Odd" name="drink">
+            				Angel of the Odd
+            			</label>
+            			<label for="devil">
+            				<input type="checkbox" id="devil" value="Never Bet the Devil Your Head" name="drink">
+            				Never Bet the Devil Your Head
+            			</label>
+            			<label for="tell-tale">
+            				<input type="checkbox" id="tell-tale" value="The Tell-Tale Heart" name="drink">
+            				The Tell-Tale Heart
+            			</label>
+            			<label for="masque">
+            				<input type="checkbox" id="masque" value="Masque of the Red Death" name="drink">
+            				Masque of the Red Death
+            			</label>
+            			<label for="cask">
+            				<input type="checkbox" id="cask" value="The Cask of Amontillado" name="drink">
+            				The Cask of Amontillado
+            			</label>
+            			<label for="raven">
+            				<input type="checkbox" id="raven" value="The Raven" name="drink">
+            				The Raven
+            			</label>
+            			<label for="eggnog">
+            				<input type="checkbox" id="eggnog" value="Edgar's Eggnog" name="drink">
+            				Edgar's Eggnog
+            			</label>
+            		</fieldset>
+            	<fieldset class="written">
+            		<legend>Additional Information</legend>
+            		<label for="written">
+            			<textarea name="written" id="written" rows="4" cols="55" placeholder="Here's where you can give us the details"></textarea>
+            		</label>
+            	</fieldset>
+            	<fieldset class="submitbutton">
+            		<input type="submit" id="submit" value="Submit">
+            	</fieldset>
+            </form>
+            <div class="feedback-preview">
+            <div class="table-row">
+               <div class="table-cell">
+                  <p>To: </p>
+               </div>
+               <div class="table-cell">
+                  <p>Poe Distillery</p>
+               </div>
+            </div>
+            <div class="table-row">
+               <div class="table-cell">
+                  <p>From:</p>
+               </div>
+               <div class="table-cell">
+                  <p class="feedback-from"></p>
+               </div>
+            </div>
+            <div class="table-row">
+               <div class="table-cell">
+               	<p>Email Address:</p>
+               </div>
+               <div class="table-cell">
+               	<p class="feedback-email"></p> 
+               </div>
+            </div>
+            <div class="table-row">
+               <div class="table-cell">
+                  <p>Feedback/question:</p>
+               </div>
+            </div>
+            
+            <p class="feedback-content"></p>
+         </div>
+            </div>
+         </article>
+			<script src="script.js"></script>
+         <footer>
+            <p>Poe Distillery &#8226; 203 North Amity St. &#8226; Baltimore, Maryland 21223 &#8226; (410) 119-1809</p>
+            <p>&#169; Steven Warren &#8226; All rights reserved.</p>
+            <div class="moon"></div>
+         </footer>
+      </div> <!-- .container -->
+   </body>
+</html>
